@@ -20,6 +20,7 @@
     "@mantine/core": "7.1.5",
     "@mantine/hooks": "7.1.5",
     "react": "^18.2.0",
+    "react-complex-tree": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2"
   },
