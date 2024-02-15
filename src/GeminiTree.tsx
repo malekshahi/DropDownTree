@@ -10,11 +10,21 @@ function GeminiTree(props) {
   const [allItems, setAllItems] = useState([]);
 
   useEffect(() => {
-    var all = createTree(props.data);
+    if(props.getData && props.url){
+      props.getData(props.url).then(data => {
+        initilaize(data);})
+    }
+    else
+      initilaize(props.data);
+  }, []);
+
+  const initilaize = (data: any) => {
+    var all = createTree(data);
     setAllItems(all);
     setExpandedItems(getExpandingItmes(all, props.selectedItem));
     setSelectedItems(props.selectedItem ? [props.selectedItem.Key] : []);
-  }, []);
+
+  }
   const levels = props.levels;
 
   const createTree = (data) => {

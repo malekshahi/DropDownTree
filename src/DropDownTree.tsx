@@ -32,6 +32,8 @@ function DropDownTree(props) {
         <GeminiTree
           levels={props.levels}
           data={props.data}
+          getData={props.getData}
+          url = {props.url}
           selectedItem={selectedItem}
           onItemSelected={onItemSelected}
         ></GeminiTree>
