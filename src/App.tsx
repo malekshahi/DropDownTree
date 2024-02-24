@@ -5,6 +5,7 @@ import { HesabMoeein } from './Data';
 import '@mantine/core/styles.css';
 import axios from 'axios'
 import GeminiTree from './GeminiTree';
+import 'react-complex-tree/lib/style-modern.css';
 
 export default function App() {
   const theme = createTheme({
