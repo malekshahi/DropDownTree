@@ -3,7 +3,6 @@ import { TextInput, Button, CloseButton, Modal, Tooltip } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { ControlledTreeEnvironment, Tree } from 'react-complex-tree';
 import GeminiTree from './GeminiTree';
-import './index.css';
 
 function DropDownTree(props) {
   const [opened, { open, close }] = useDisclosure(false);

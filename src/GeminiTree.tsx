@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ControlledTreeEnvironment, Tree } from 'react-complex-tree';
 import { createNodes } from './TreeNodeCreator';
-import './index.css';
 
 function GeminiTree(props) {
   const [focusedItem, setFocusedItem] = useState();
