@@ -1,13 +1,15 @@
 import { useState } from 'react';
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, createTheme } from '@mantine/core';
 import { Router } from './Router';
-import { theme } from './theme';
 import DropDownTree from "./DropDownTree";
 import { HesabMoeein } from './Data';
 import '@mantine/core/styles.css';
 import axios from 'axios'
 
 export default function App() {
+  const theme = createTheme({
+    /** Put your mantine theme override here */
+  });
   const [data, setData] = useState(HesabMoeein);
   const getData = (api) =>{
 
