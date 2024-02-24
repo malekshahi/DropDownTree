@@ -11,9 +11,9 @@ export default function App() {
     /** Put your mantine theme override here */
   });
   const [data, setData] = useState(HesabMoeein);
-  const getData = (api) =>{
+  const getData = (api: any) =>{
 
-    axios.get(api).then(result => {
+    return axios.get(api).then(result => {
       return result.data;
   });
 }
