@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { MantineProvider, createTheme } from '@mantine/core';
-import { Router } from './Router';
 import DropDownTree from "./DropDownTree";
 import { HesabMoeein } from './Data';
 import '@mantine/core/styles.css';
 import axios from 'axios'
+import GeminiTree from './GeminiTree';
 
 export default function App() {
   const theme = createTheme({
@@ -19,9 +19,8 @@ export default function App() {
 }
   return (
     <MantineProvider theme={theme}>
-      {/* <DropDownTree data={data}  levels = {['GoroohHesab', 'HesabKol', 'HesabMoeein']}></DropDownTree> */}
-      <DropDownTree url= {'http://localhost/Mali/Server/Services/Entity/GetTreeData'} getData = {getData} levels = {['GoroohHesab', 'HesabKol', 'HesabMoeein']}></DropDownTree>
-      <Router />
+      <GeminiTree data={data}  levels = {['GoroohHesab', 'HesabKol', 'HesabMoeein']}></GeminiTree>
+      {/* <DropDownTree url= {'http://localhost/Mali/Server/Services/Entity/GetTreeData'} getData = {getData} levels = {['GoroohHesab', 'HesabKol', 'HesabMoeein']}></DropDownTree> */}
     </MantineProvider>
   );
 }
