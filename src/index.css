@@ -1,0 +1,25 @@
+html {
+  direction: rtl;
+}
+
+.rct-tree-item-title-container-selected .rct-tree-item-button::before {
+  right: -24px;
+}
+
+.rct-tree-item-li {
+  padding-right: 8px !important;
+  padding-left: 0px !important;
+}
+
+.rct-tree-item-arrow svg {
+  transform: rotateY(180deg);
+}
+
+.rct-tree-root {
+  padding: 8px !important;
+}
+
+.rct-tree-item-button,
+.rct-tree-item-title-container {
+  padding-left: 0 !important;
+}
