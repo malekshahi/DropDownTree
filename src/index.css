@@ -22,4 +22,6 @@ html {
 .rct-tree-item-button,
 .rct-tree-item-title-container {
   padding-left: 0 !important;
+  font-family: IRANSans !important;
+  font-size: 13px !important;
 }
